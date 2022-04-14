@@ -4,7 +4,7 @@ V2ray/Xray多用户管理脚本，向导式管理[新增|删除|修改]传输协
 ![](https://img.shields.io/pypi/v/v2ray-util.svg) 
 [![Downloads](https://pepy.tech/badge/v2ray-util)](https://pepy.tech/project/v2ray-util)
 [![Downloads](https://pepy.tech/badge/v2ray-util/month)](https://pepy.tech/project/v2ray-util)
-![](https://img.shields.io/docker/pulls/jrohy/v2ray.svg)
+
 ![](https://img.shields.io/github/license/Jrohy/multi-v2ray.svg)
 
 ## [中文](README.md)  [English](README_EN.md)
@@ -12,7 +12,7 @@ V2ray/Xray多用户管理脚本，向导式管理[新增|删除|修改]传输协
 ## 特色
 
 - [x] 支持Xray管理, v2ray和xray相互独立, 不同命令(v2ray/xray)进入不同的core管理
-- [x] 直接安装v2ray（Author: Jrohy）/xray（Modify: Radium-bit）
+- [x] 直接安装v2ray（Author:[Jrohy](https://github.com/Jrohy)）/xray（Modify: Radium-bit）
 - [x] 调用v2ray官方api进行流量统计
 - [x] **多用户, 多端口管理**, 混合传输协议管理不再是梦
 - [x] 首次安装时产生随机端口，默认配置mkcp + 随机一种 (srtp | wechat-video | utp | dtls | wireguard) header伪装;  
