@@ -107,7 +107,7 @@ removeV2Ray() {
     rm -rf /etc/profile.d/iptables.sh >/dev/null 2>&1
     rm -rf /root/.iptables >/dev/null 2>&1
 
-    #删除v2ray定时更新任务
+    #删除v2ra/xray定时更新任务
     crontab -l|sed '/SHELL=/d;/v2ray/d'|sed '/SHELL=/d;/xray/d' > crontab.txt
     crontab crontab.txt >/dev/null 2>&1
     rm -f crontab.txt >/dev/null 2>&1
@@ -118,7 +118,7 @@ removeV2Ray() {
         systemctl restart cron >/dev/null 2>&1
     fi
 
-    #删除multi-v2ray环境变量
+    #删除multi-xray环境变量
     sed -i '/v2ray/d' ~/$ENV_FILE
     sed -i '/xray/d' ~/$ENV_FILE
     source ~/$ENV_FILE
@@ -216,11 +216,11 @@ EOF
     rm -f /usr/local/bin/xray >/dev/null 2>&1
     ln -s $(which v2ray-util) /usr/local/bin/xray
 
-    #移除旧的v2ray bash_completion脚本
+    #移除旧的v2ray/xray bash_completion脚本
     [[ -e /etc/bash_completion.d/v2ray.bash ]] && rm -f /etc/bash_completion.d/v2ray.bash
     [[ -e /usr/share/bash-completion/completions/v2ray.bash ]] && rm -f /usr/share/bash-completion/completions/v2ray.bash
 
-    #更新v2ray bash_completion脚本
+    #更新v2ray/xray bash_completion脚本
     curl $BASH_COMPLETION_SHELL > /usr/share/bash-completion/completions/v2ray
     curl $BASH_COMPLETION_SHELL > /usr/share/bash-completion/completions/xray
     if [[ -z $(echo $SHELL|grep zsh) ]];then
