@@ -78,7 +78,8 @@ apt install -y curl
 yum install -y curl
 ```
 
-再开始执行安装命令，要安装v2ray把链接中xray.sh改成v2ray.sh即可。
+再开始执行安装命令，本脚本默认安装更强大的xray-core  
+要安装v2ray把链接中xray.sh改成v2ray.sh即可。
 
 ```
 source <(curl -sL https://raw.githubusercontent.com/Radium-bit/multi-xray/main/xray.sh) --zh
