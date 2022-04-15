@@ -1,4 +1,4 @@
-# multi-xray 
+# multi-xray
 
 V2ray/Xray多用户管理脚本，向导式管理[新增|删除|修改]传输协议  
 ![](https://img.shields.io/pypi/v/v2ray-util.svg) 
@@ -66,20 +66,32 @@ V2ray/Xray多用户管理脚本，向导式管理[新增|删除|修改]传输协
 
 ## 安装命令
 
+###### 安装之前，请先运行
+
+```shell
+apt install -y curl
 ```
-source <(curl -sL https://raw.githubusercontent.com/Radium-bit/multi-v2ray/master/xray.sh) --zh
+或者
+```shell
+yum install -y curl
+```
+再开始执行安装命令
+
+```
+source <(curl -sL https://raw.githubusercontent.com/Radium-bit/mulit-xray/main/xray.sh) --zh
+
 ```
 
 ## 升级命令(保留配置文件更新)
 
 ```
-source <(curl -sL https://raw.githubusercontent.com/Radium-bit/multi-v2ray/master/xray.sh) -k
+source <(curl -sL https://raw.githubusercontent.com/Radium-bit/mulit-xray/main/xray.sh) -k
 ```
 
 ## 卸载命令
 
 ```
-source <(curl -sL https://raw.githubusercontent.com/Radium-bit/multi-v2ray/master/xray.sh) --remove
+source <(curl -sL https://raw.githubusercontent.com/Radium-bit/mulit-xray/main/xray.sh) --remove
 ```
 
 ## 命令行参数
