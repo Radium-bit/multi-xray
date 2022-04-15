@@ -20,7 +20,7 @@ REMOVE=0
 
 CHINESE=0
 
-BASE_SOURCE_PATH="https://raw.githubusercontent.com/Radium-bit/mulit-xray/main"
+BASE_SOURCE_PATH="https://raw.githubusercontent.com/Radium-bit/multi-xray/main"
 
 UTIL_PATH="/etc/v2ray_util/util.cfg"
 
