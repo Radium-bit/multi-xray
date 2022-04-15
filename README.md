@@ -6,7 +6,7 @@ V2ray/Xray多用户管理脚本，向导式管理[新增|删除|修改]传输协
 
 ## [中文](README.md)  [English](README_EN.md)
 
-- [x] 修改自[Jrohy](https://github.com/Jrohy)的项目[multi-v2ray](https://github.com/Jrohy/mulit-v2ray)
+- [x] 修改自[Jrohy](https://github.com/Jrohy)的项目[multi-v2ray](https://github.com/Jrohy/multi-v2ray)
 
 ## 特色
 
