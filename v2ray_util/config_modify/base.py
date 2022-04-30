@@ -110,7 +110,7 @@ def new_uuid():
         pass
     else:
         client_index = cs.client_index
-        if type(group.node_list[client_index]) == Vmess:
+        if type(group.node_list[client_index]) == (Vmess: or vless: )
             print("{}: {}".format(_("node UUID"), group.node_list[client_index].password))
             choice = readchar(_("get new UUID?(y/n): ")).lower()
             if choice == "y":
@@ -124,7 +124,7 @@ def new_uuid():
             else:
                 print(_("undo modify"))
         else:
-            print(_("only vmess protocol can modify uuid!"))
+            print(_("only vmess/VLESS protocol can modify uuid!"))
 
 @restart(True)
 def port():
