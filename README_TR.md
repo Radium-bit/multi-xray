@@ -78,7 +78,7 @@ apt install -y curl
 yum install -y curl
 ```
 
-再開始執行安裝命令，本腳本默認安裝更強大的xray-core  
+再開始執行安裝命令，该腳本默認安裝更強大的xray-core  
 要安裝v2ray把鏈接中xray.sh改成v2ray.sh即可。
 
 ```

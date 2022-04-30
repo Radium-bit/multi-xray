@@ -4,7 +4,7 @@ V2ray/Xray多用户管理脚本，向导式管理[新增|删除|修改]传输协
 ![](https://img.shields.io/pypi/v/v2ray-util.svg) 
 ![](https://img.shields.io/github/license/Jrohy/multi-v2ray.svg)
 
-## [中文](README.md)  [English](README_EN.md)
+## [简体中文](README.md) |[English](README_EN.md) |[正體中文](README_TR.md)
 
 - [x] 修改自[Jrohy](https://github.com/Jrohy)的项目[multi-v2ray](https://github.com/Jrohy/multi-v2ray)
 
