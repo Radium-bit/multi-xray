@@ -6,7 +6,7 @@ V2ray/Xray多用户管理脚本，向导式管理[新增|删除|修改]传输协
 
 ## [中文](README.md)  [English](README_EN.md)
 
-- [x] 修改自[Jrohy](https://github.com/Jrohy)的项目[multi-v2ray](https://github.com/Jrohy/mulit-v2ray)
+- [x] 修改自[Jrohy](https://github.com/Jrohy)的项目[multi-v2ray](https://github.com/Jrohy/multi-v2ray)
 
 ## 特色
 
@@ -78,7 +78,8 @@ apt install -y curl
 yum install -y curl
 ```
 
-再开始执行安装命令
+再开始执行安装命令，本脚本默认安装更强大的xray-core  
+要安装v2ray把链接中xray.sh改成v2ray.sh即可。
 
 ```
 source <(curl -sL https://raw.githubusercontent.com/Radium-bit/multi-xray/main/xray.sh) --zh
