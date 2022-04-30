@@ -1,5 +1,9 @@
 # Change Log
 
+## v1.0.2(2022-4-30)
+
+* UUID生成方式更新为uuid4，见[Merge pull request #586 from Kinue72/master · Jrohy/multi-v2ray@4658b91 · GitHub](https://github.com/Jrohy/multi-v2ray/commit/4658b91a11d6819c16e4b5e1d3417af20794a03f)
+
 ## v1.0.1(2022-04-15)
 
 * 修复了xray.sh不能正常安装的问题！
