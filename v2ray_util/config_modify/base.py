@@ -4,7 +4,7 @@ from v2ray_util import run_type
 
 from ..util_core.v2ray import restart
 from ..util_core.utils import readchar, random_email, ColorStr
-from ..util_core.group import Vmess, Socks, Mtproto, SS
+from ..util_core.group import Vless, Vmess, Socks, Mtproto, SS
 from ..util_core.writer import ClientWriter, GroupWriter
 from ..util_core.selector import ClientSelector, GroupSelector
 
@@ -17,7 +17,7 @@ def alterid():
         pass
     else:
         client_index = cs.client_index
-        if type(group.node_list[client_index]) == Vmess:
+        if type(group.node_list[client_index]) == Vmess or type(group.node_list[client_index]) == Vless:
             print("{}: {}".format(_("node alterID"), group.node_list[client_index].alter_id))
             new_alterid = input(_("please input new alterId: "))
             if (new_alterid.isnumeric()):
@@ -28,7 +28,7 @@ def alterid():
             else:
                 print(_("input error, please check is number"))
         else:
-            print(_("only vmess protocol can modify alterId!"))
+            print(_("only vmess/VLESS protocol can modify alterId!"))
 
 @restart()
 def dyn_port():
@@ -110,7 +110,7 @@ def new_uuid():
         pass
     else:
         client_index = cs.client_index
-        if type(group.node_list[client_index]) == (Vmess or Vless):
+        if type(group.node_list[client_index]) == (Vmess || Vless):
             print("{}: {}".format(_("node UUID"), group.node_list[client_index].password))
             choice = readchar(_("get new UUID?(y/n): ")).lower()
             if choice == "y":
