@@ -101,30 +101,30 @@ source <(curl -sL https://raw.githubusercontent.com/Radium-bit/mulit-xray/main/x
 
 ```bash
 v2ray/xray [-h|help] [options]
-    -h, help View help
-    -v, version View version number
-    start start V2Ray
-    stop stop V2Ray
-    restart restart V2Ray
-    status View V2Ray running status
-    new rebuild the new v2ray json configuration file
-    update Update V2Ray to the latest Release version
+    -h,            help View help
+    -v,            version View version number
+    start          start V2Ray
+    stop           stop V2Ray
+    restart        restart V2Ray
+    status         View V2Ray running status
+    new            rebuild the new v2ray json configuration file
+    update         Update V2Ray to the latest Release version
     update [version] Update V2Ray to the specified version
-    update.sh update multi-v2ray to the latest version
-    add add new port group
+    update.sh      update multi-v2ray to the latest version
+    add            add new port group
     add [protocol] Add a new protocol group, the port is random, such as v2ray add utp to add utp protocol
-    del delete port group
-    info View configuration
-    port Modify the port
-    tls modify tls
-    tfo Modify tcpFastOpen
-    stream modifies the transport protocol
-    cdn go cdn
-    stats v2ray traffic statistics
-    iptables iptables traffic statistics
-    clean clean up logs
-    log View log
-    rm uninstall core
+    del            delete port group
+    info           View configuration
+    port           Modify the port
+    tls            modify tls settings
+    tfo            Modify tcpFastOpen
+    stream         modifies the transport protocol
+    cdn            transfer over CDN
+    stats          v2ray/xray traffic statistics
+    iptables       iptables traffic statistics
+    clean          clean up logs
+    log            View log
+    rm             uninstall core
 ````
 
 ## Docker run
