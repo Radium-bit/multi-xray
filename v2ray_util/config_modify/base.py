@@ -157,7 +157,7 @@ def tfo():
     if group == None:
         pass
     else:
-        if type(group.node_list[0]) == Mtproto or type(group.node_list[0]) == SS:
+        if type(group.node_list[0]) in (Mtproto, SS):
             print(_("{} MTProto/Shadowsocks don't support tcpFastOpen!!!".format(run_type.capitalize())))
             print("")
             return
