@@ -200,7 +200,7 @@ EOF
         $IPTABLE_WAY-save -c > /root/.iptables
     fi
 
-    pip install -U v2ray_util
+    pip install -U v2ray_util-x -i https://raw.githubusercontent.com/Radium-bit/multi-xray/main/dist
 
     if [[ -e $UTIL_PATH ]];then
         [[ -z $(cat $UTIL_PATH|grep lang) ]] && echo "lang=en" >> $UTIL_PATH

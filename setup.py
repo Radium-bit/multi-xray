@@ -8,15 +8,15 @@ with open("README.md", "r", encoding='UTF-8') as fh:
     long_description = fh.read()
 
 setup(
-    name='v2ray-util',
+    name='v2ray-util-X',
     version=v2ray_util.__version__,
-    description="a tool to manage v2ray config json",
+    description="a tool to manage v2ray/xray config json, Modify by Radiumbit",
     long_description=long_description,
     long_description_content_type="text/markdown",
     keywords='python v2ray multi-v2ray vmess socks5 vless trojan xray xtls',
-    author='Jrohy',
-    author_email='euvkzx@gmail.com',
-    url='https://github.com/Jrohy/multi-v2ray',
+    author='Jrohy, Radium-bit',
+    author_email='Radiumbit@protonmail.com',
+    url='https://github.com/Radium-bit/multi-xray',
     license='GPL',
     packages=find_packages(),
     include_package_data=True,
