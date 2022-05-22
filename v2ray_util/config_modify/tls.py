@@ -89,14 +89,14 @@ def modify():
     if group == None:
         pass
     else:
-        if type(group.node_list[0]) in (Mtproto, SS):
+        if type(group.node_list[0]) == Mtproto or type(group.node_list[0]) == SS:
             print(_("MTProto/Shadowsocks protocol not support https!!!"))
             print("")
             return
-        tm = TLSModifier(group.tag, group.index)
-        tls_status = 'open' if group.tls == 'tls' or group.tls == 'xtls' else 'close'
+        xtls = True if group.tls == "xtls" else False
+        tm = TLSModifier(group.tag, group.index, xtls=xtls)
+        tls_status = 'open' if group.tls in ('tls', 'xtls') else 'close'
         print("{}: {}\n".format(_("group tls status"), tls_status))
-        print("")
         print(_("1.open TLS"))
         print(_("2.close TLS"))
         choice = readchar(_("please select: "))
