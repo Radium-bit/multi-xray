@@ -28,7 +28,7 @@ class SSFactory:
             exit(-1)   
 
     def get_password(self):
-        random_pass = ''.join(random.sample(string.ascii_letters + string.digits, 16))
+        random_pass = ''.join(random.sample(string.ascii_letters + string.digits, 18))
         new_pass =input("{} {}, {}".format(_("random generate password"), ColorStr.green(random_pass), _("enter to use, or input customize password: ")))
         if not new_pass:
             new_pass = random_pass
