@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 import v2ray_util
 
-with open("README.md", "r", encoding='UTF-8') as fh:
+with open("README.md", "r", encoding='UTF-8', errors='ignore') as fh:
     long_description = fh.read()
 
 setup(
