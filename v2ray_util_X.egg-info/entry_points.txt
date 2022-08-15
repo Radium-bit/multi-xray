@@ -1,3 +1,0 @@
-[console_scripts]
-v2ray-util = v2ray_util.main:menu
-

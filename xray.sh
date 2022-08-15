@@ -72,7 +72,7 @@ while [[ $# > 0 ]];do
     shift # past argument or value
 done
 #############################
-
+#############################
 help(){
     echo "bash v2ray.sh [-h|--help] [-k|--keep] [--remove]"
     echo "  -h, --help           Show help"

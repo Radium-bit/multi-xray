@@ -1,1 +1,0 @@
-from ..util_core.trans import _
