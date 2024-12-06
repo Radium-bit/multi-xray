@@ -1,8 +1,7 @@
 # multi-xray
 
 V2ray/Xray多用户管理脚本，向导式管理[新增|删除|修改]传输协议  
-![](https://img.shields.io/pypi/v/v2ray-util.svg) 
-![](https://img.shields.io/github/license/Jrohy/multi-v2ray.svg)
+This project has been archived.
 
 ## [简体中文](README.md) |[English](README_EN.md) |[正體中文](README_TR.md)
 
@@ -127,42 +126,7 @@ v2ray/xray [-h|help] [options]
     rm                   卸载core
 ```
 
-## Docker运行
-
-默认创建mkcp + 随机一种伪装头配置文件(**如果使用xray则换成镜像jrohy/xray**)：
-
-```
-docker run -d --name v2ray --privileged --restart always --network host jrohy/v2ray
-```
-
-自定义v2ray配置文件:
-
-```
-docker run -d --name v2ray --privileged -v /path/config.json:/etc/v2ray/config.json --restart always --network host jrohy/v2ray
-```
-
-查看v2ray配置:
-
-```
-docker exec v2ray bash -c "v2ray info"
-```
-
-**warning**: 如果用centos，需要先关闭防火墙
-
-```
-systemctl stop firewalld.service
-systemctl disable firewalld.service
-```
-
 ## 建议
 
 安装完v2ray后强烈建议开启BBR等加速: [Linux-NetSpeed](https://github.com/chiakge/Linux-NetSpeed)  
 使用Trojan和VLESS协议建议自行安装个nginx, 能让v2ray顺利Fallback到默认的80端口
-
-## 依赖
-
-v2ray docker: https://hub.docker.com/r/jrohy/v2ray  
-xray docker: https://hub.docker.com/r/jrohy/xray  
-pip: https://pypi.org/project/v2ray-util/  
-python3: https://github.com/Jrohy/python3-install  
-acme: https://github.com/acmesh-official/acme.sh
